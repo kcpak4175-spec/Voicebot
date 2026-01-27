@@ -117,7 +117,7 @@ def main():
         if api_key:
             st.success("API 키 입력됨 ✅")
         
-        st.markdown("[🔗 Gemini API 키 발급/확인](https://aistudio.google.com/app/apikey)")
+        st.markdown("[🔗 Gemini API 키 발급/확인](https://aistudio.google.com/welcome)")
         
         st.markdown("---")
 
@@ -186,4 +186,5 @@ if __name__ == "__main__":
         main()
     else:
         # 이 파일 자체를 스트림릿으로 재실행함
+
         subprocess.run(["streamlit", "run", sys.argv[0]])
